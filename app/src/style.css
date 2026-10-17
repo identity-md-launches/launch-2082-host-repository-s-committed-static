@@ -965,6 +965,8 @@ li > .tt-row.mine .tt-place { color: var(--mine); }
   .tt-row { padding: 3px 0; }
 }
 @media (max-width: 999px) {
+  /* The prize rail already shows the launch countdown here; a second card overlaps it. */
+  #launch { display: none; }
   /* small screens: the fade comes down from the top, behind the clock and jackpot */
   /* the fade reaches 2px up under the header, so no sliver of board shows between them */
   #viewport { overflow: visible; clip-path: inset(-2px 0 0 0); }
